@@ -26,9 +26,10 @@ const model = new ChatGoogleGenerativeAI({
 
 async function init(){
     try {
-    const respone = await model.invoke([
-    new HumanMessage(' who are you . ')
-    ])
+    // const respone = await model.invoke([
+    // new HumanMessage(' who is india prime minister . ')
+
+    const respone = await model.invoke('why modi is best prime minister of india ?')
 
     
     console.log('Gemini Response : ', respone.content)
