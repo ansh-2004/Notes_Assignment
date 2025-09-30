@@ -89,8 +89,3 @@ print(not log1) # Output :- False
 print(log1 & log2) # Output :- False
 print(log1 | log2) # Output :- True
 
-
-
-
-
-

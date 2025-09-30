@@ -80,3 +80,22 @@ print("sorted list ",li) # Output :- ['apple', 'banana', 'guava', 'mango']
 li.sort(reverse=True)
 print("sorted list in descending order ",li) # Output :- ['mango', 'guava', 'banana', 'apple']
 
+
+# ---
+# Concatenating Lists
+list1 = [1,2,3]
+list2 = ['a','b','c']
+print(list1 + list2)  # Output :- [1, 2, 3, 'a', 'b', 'c']
+
+# Here + operator is used to concatenate two lists
+
+# ---
+# Repeating elements 
+list3 = [1,'a',True]
+print(list3 * 3) # Output :- [1, 'a', True, 1, 'a', True, 1, 'a', True]
+
+# Here * operator is used to repeat the elements of a list
+
+# ---
+# Length of a list
+print(len(list3)) # Output :- 3
