@@ -34,10 +34,10 @@ class Platypus(Mammal, Bird):
 
 
 p = Platypus()
-# print(p.speak())         # From Animal
-# print(p.give_birth())    # From Mammal
-# print(p.lay_eggs())      # From Bird
-# print(p.unique_trait())  # From Platypus
+print(p.speak())         # From Animal
+print(p.give_birth())    # From Mammal
+print(p.lay_eggs())      # From Bird
+print(p.unique_trait())  # From Platypus
 
 # output:
 # Animal sound
@@ -46,7 +46,7 @@ p = Platypus()
 # Can swim and lay eggs
 
 
-# print(Platypus.__mro__) # (<class '__main__.Platypus'>, <class '__main__.Mammal'>, <class '__main__.Bird'>, <class '__main__.Animal'>, <class 'object'>)
+print(Platypus.__mro__) # (<class '__main__.Platypus'>, <class '__main__.Mammal'>, <class '__main__.Bird'>, <class '__main__.Animal'>, <class 'object'>)
 
 
 #---

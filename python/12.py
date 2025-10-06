@@ -55,9 +55,9 @@ c.assign_string_one("string 1")
 c.assign_string_two("string 2")
 c.assign_string_three("string 3")
 
-# print(c.show_string_one())  # output : string 1
-# print(c.show_string_two()) # output : string 2
-# print(c.show_string_three()) # output :string 3 
+print(c.show_string_one())  # output : string 1
+print(c.show_string_two()) # output : string 2
+print(c.show_string_three()) # output :string 3 
 
 
 
@@ -79,9 +79,9 @@ class C(A,B) :
     pass
 
 c = C()
-# c.greet()   # output: Hello from A
+c.greet()   # output: Hello from A
 
-# print(C.__mro__) # shows method resolution order 
+print(C.__mro__) # shows method resolution order 
 
 #output:
 # (<class '__main__.C'>, <class '__main__.A'>, <class '__main__.B'>, <class 'object'>)
@@ -108,7 +108,7 @@ class Derived(Parent1, Parent2):
     def __init__(self):
         super().__init__()  # Only calls Parent1's constructor due to MRO
 
-# d = Derived()  # Parent1 constructor
+d = Derived()  # Parent1 constructor
 
 
 # To call both constructors, you can explicitly invoke them:

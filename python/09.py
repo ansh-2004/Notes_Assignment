@@ -5,8 +5,8 @@
 # simple for loop
 fruits = ["apple","mango","banana"]
 
-# for i in fruits:
-#     print(i)                  
+for i in fruits:
+    print(i)                  
 
 # output:- 
 # apple
@@ -20,10 +20,10 @@ fruits = ["apple","mango","banana"]
 color = ["blue","green","yellow"]
 item = ["book","ball","chair"]
 
-# for i in color:
-#     for j in item:
-#         # print("i is",i + " j is",j)
-#         print(f"i is {i} and j is {j}") # embed variables inside strings. The f before the string tells Python to treat it as a formatted string literal.
+for i in color:
+    for j in item:
+        # print("i is",i + " j is",j)
+        print(f"i is {i} and j is {j}") # embed variables inside strings. The f before the string tells Python to treat it as a formatted string literal.
 
 # output:-
 # i is blue j is book
@@ -65,8 +65,8 @@ item = ["book","ball","chair"]
 
 # #### 1. `range(5)`
 # ```python
-# for i in range(5):
-#     print(i)
+for i in range(5):
+    print(i)
 # ```
 # **Output:**
 # ```
@@ -79,8 +79,8 @@ item = ["book","ball","chair"]
 
 # #### 2. `range(2, 6)`
 # ```python
-# for i in range(2, 6):
-#     print(i)
+for i in range(2, 6):
+    print(i)
 # ```
 # **Output:**
 # ```
@@ -92,8 +92,8 @@ item = ["book","ball","chair"]
 
 # #### 3. `range(1, 10, 2)`
 # ```python
-# for i in range(1, 10, 2):
-#     print(i)
+for i in range(1, 10, 2):
+    print(i)
 # ```
 # **Output:**
 # ```
@@ -138,7 +138,7 @@ item = ["book","ball","chair"]
 # To view the contents of a range, you need to **convert it to a list**:
 
 # ```python
-# print(list(range(1, 5, 2)))
+print(list(range(1, 5, 2)))
 # ```
 
 # **Output:**
@@ -159,8 +159,8 @@ item = ["book","ball","chair"]
 # ### 🧪 Bonus: You can also loop through it
 
 # ```python
-# for i in range(1, 5, 2):
-#     print(i)
+for i in range(1, 5, 2):
+    print(i)
 # ```
 
 # **Output:**
@@ -174,9 +174,9 @@ item = ["book","ball","chair"]
 # While loop 
 
 i = 1
-# while i<=10:
-#     print(i)
-#     i=i+1
+while i<=10:
+    print(i)
+    i=i+1
   
 # output:-
 # 1
@@ -196,9 +196,9 @@ i = 1
 i = 1 
 n = 2
 
-# while i <= 10:
-#     print(n," * ",i, "=", n * i)
-#     i=i+1
+while i <= 10:
+    print(n," * ",i, "=", n * i)
+    i=i+1
 
 # output:-
 # 2  *   1 =   2
@@ -243,20 +243,20 @@ print(li) # Output: [101, 102, 103, 104, 105]
 # - **`pass`**: does nothing (placeholder)
 
 # ```python
-# for i in range(5):
-#     if i == 3:
-#         break
-#     print(i)  # Output: 0, 1, 2
+for i in range(5):
+    if i == 3:
+        break
+    print(i)  # Output: 0, 1, 2
 
-# for i in range(5):
-#     if i == 3:
-#         continue
-#     print(i)  # Output: 0, 1, 2, 4
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)  # Output: 0, 1, 2, 4
 
-# for i in range(5):
-#     if i == 3:
-#         pass
-#     print(i)  # Output: 0, 1, 2, 3, 4
+for i in range(5):
+    if i == 3:
+        pass
+    print(i)  # Output: 0, 1, 2, 3, 4
 # ```
 
 # ---
@@ -266,11 +266,11 @@ print(li) # Output: [101, 102, 103, 104, 105]
 # Python allows an `else` block after a loop — it runs **only if the loop completes normally** (i.e., not interrupted by `break`).
 
 # ```python
-# for i in range(5):
-#     if i == 10:
-#         break
-# else:
-#     print("Loop completed without break")  # ✅ This will print
+for i in range(5):
+    if i == 10:
+        break
+else:
+    print("Loop completed without break")  # ✅ This will print
 # ```
 
 # ---
@@ -279,16 +279,16 @@ print(li) # Output: [101, 102, 103, 104, 105]
 
 # Instead of manually tracking index with `i`, use `enumerate()`:
 # instead of this code to track index
-# fruits = ["apple", "banana", "cherry"]
-# for i in range(len(fruits)):
-#     print(f"{i}: {fruits[i]}")
+fruits = ["apple", "banana", "cherry"]
+for i in range(len(fruits)):
+    print(f"{i}: {fruits[i]}")
 
 # we use this code 
 
 # ```python
-# fruits = ["apple", "banana", "cherry"]
-# for index, fruit in enumerate(fruits):
-#     print(f"{index}: {fruit}")
+fruits = ["apple", "banana", "cherry"]
+for index, fruit in enumerate(fruits):
+    print(f"{index}: {fruit}")
 # ```
 
 #enumerate(fruits) returns an iterator that produces pairs: (index, item)
@@ -300,8 +300,8 @@ print(li) # Output: [101, 102, 103, 104, 105]
 # You can also specify a starting index:
 
 
-# for index, fruit in enumerate(fruits, start=1):
-#     print(f"{index}: {fruit}")
+for index, fruit in enumerate(fruits, start=1):
+    print(f"{index}: {fruit}")
 
 # output
 # 1: apple
@@ -316,11 +316,11 @@ print(li) # Output: [101, 102, 103, 104, 105]
 # Loop through multiple lists together:
 
 # ```python
-# names = ["Alice", "Bob", "Charlie"]
-# scores = [85, 90, 95]
+names = ["Alice", "Bob", "Charlie"]
+scores = [85, 90, 95]
 
-# for name, score in zip(names, scores):
-#     print(f"{name} scored {score}")
+for name, score in zip(names, scores):
+    print(f"{name} scored {score}")
 # ```
 
 # ---
@@ -330,14 +330,14 @@ print(li) # Output: [101, 102, 103, 104, 105]
 # A compact way to create lists:
 
 # ```python
-# squares = [x**2 for x in range(5)]
-# print(squares)  # Output: [0, 1, 4, 9, 16]
+squares = [x**2 for x in range(5)]
+print(squares)  # Output: [0, 1, 4, 9, 16]
 # ```
 
 # You can even add conditions:
 
 # ```python
-# evens = [x for x in range(10) if x % 2 == 0]
+evens = [x for x in range(10) if x % 2 == 0]
 # ```
 
 # ---
@@ -347,10 +347,10 @@ print(li) # Output: [101, 102, 103, 104, 105]
 # ### 6️⃣ Ternary Operator (One-line `if-else`)
 
 # ```python
-# a = 10
-# b = 20
-# max_val = a if a > b else b
-# print(max_val)  # Output: 20
+a = 10
+b = 20
+max_val = a if a > b else b
+print(max_val)  # Output: 20
 # ```
 
 # ---
@@ -358,9 +358,9 @@ print(li) # Output: [101, 102, 103, 104, 105]
 # ### 7️⃣ Logical Operators: `and`, `or`, `not`
 
 # ```python
-# x = 5
-# if x > 0 and x < 10:
-#     print("x is between 1 and 9")
+x = 5
+if x > 0 and x < 10:
+    print("x is between 1 and 9")
 # ```
 
 # ---
@@ -371,26 +371,26 @@ print(li) # Output: [101, 102, 103, 104, 105]
 # - `is`, `is not` → check identity (same memory location)
 
 # ```python
-# a = [1, 2, 3]
-# b = a
-# print(a is b)  # True
-# print(2 in a)  # True
+a = [1, 2, 3]
+b = a
+print(a is b)  # True
+print(2 in a)  # True
 # ```
-# a = [1, 2, 3]
-# b = a
-# c = [1, 2, 3]
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
 
-# print(a is b)     # True → b is just another name for a
-# print(a is c)     # False → a and c have same content but are different objects
-# print(a == c)     # True → values are equal, but not identity
+print(a is b)     # True → b is just another name for a
+print(a is c)     # False → a and c have same content but are different objects
+print(a == c)     # True → values are equal, but not identity
 
 # ---
 
 # ## 🧪 Bonus: Looping with `range()` in reverse
 
 # ```python
-# for i in range(10, 0, -1):
-#     print(i)
+for i in range(10, 0, -1):
+    print(i)
 # ```
 
 # ---

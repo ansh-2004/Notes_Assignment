@@ -31,9 +31,9 @@ class Car(Vehicle):  # to create child class , we have parenthesis and inside th
         print("I am a car ")
 
 
-# c1 = Car(200,200)  # Although i don't have constructor in child class but i am passing it the value . this is because car class is inheriting the vehicle class, so this will automatically have all two methods of vehcle class , the init method and show_details method  
+c1 = Car(200,200)  # Although i don't have constructor in child class but i am passing it the value . this is because car class is inheriting the vehicle class, so this will automatically have all two methods of vehcle class , the init method and show_details method  
 
-# c1.show_details()
+c1.show_details()
 
 # output:
 # I am a vehicle
@@ -41,7 +41,7 @@ class Car(Vehicle):  # to create child class , we have parenthesis and inside th
 # cost of vehicle is  200
 
 
-# c1.show_car() # output:- I am a car                  
+c1.show_car() # output:- I am a car                  
 
 
 # ----
@@ -169,4 +169,4 @@ v.show_cost()           # ✅ Works fine
 # So you can still access it like this:
 
 # python
-# print(v._Vehicle__cost)  # ✅ Works: prints 10000
+print(v._Vehicle__cost)  # ✅ Works: prints 10000

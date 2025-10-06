@@ -47,9 +47,9 @@ gc.assign_name("ansh")
 gc.assign_age(20)
 gc.assign_gender("Male")
 
-# print(gc.show_name()) # output: ansh
-# print(gc.show_age())  # output: 20
-# print(gc.show_gender()) # output: Male
+print(gc.show_name()) # output: ansh
+print(gc.show_age())  # output: 20
+print(gc.show_gender()) # output: Male
 
 
 

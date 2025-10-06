@@ -34,39 +34,39 @@ print(c.speak())  # Output: Cat says Meow!
 # You can define common methods in the parent and use them in all children:
 
 # python
-# class Animal:
-#     def eat(self):
-#         return "Eating food"
+class Animal:
+    def eat(self):
+        return "Eating food"
 
-# class Dog(Animal):
-#     def bark(self):
-#         return "Woof!"
+class Dog(Animal):
+    def bark(self):
+        return "Woof!"
 
-# class Cat(Animal):
-#     def meow(self):
-#         return "Meow!"
+class Cat(Animal):
+    def meow(self):
+        return "Meow!"
 # python
-# dog = Dog()
-# cat = Cat()
+dog = Dog()
+cat = Cat()
 
-# print(dog.eat())  # Shared method
-# print(cat.eat())  # Shared method
+print(dog.eat())  # Shared method
+print(cat.eat())  # Shared method
 # 2. Adding Unique Behavior
 # Each child can have its own unique methods while still inheriting shared ones:
 
 # python
-# class Bird(Animal):
-#     def fly(self):
-#         return "Flying high"
+class Bird(Animal):
+    def fly(self):
+        return "Flying high"
 # 3. Constructor Inheritance
 # You can use super() to call the parent’s constructor:
 
 # python
-# class Animal:
-#     def __init__(self, name):
-#         self.name = name
+class Animal:
+    def __init__(self, name):
+        self.name = name
 
-# class Dog(Animal):
-#     def __init__(self, name, breed):
-#         super().__init__(name)
-#         self.breed = breed
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)
+        self.breed = breed

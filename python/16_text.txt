@@ -1,1 +1,4 @@
-This is the topic of file handling in python 
+I am learning file handling in python
+This is append mode 
+Topics are open , read and write mode 
+append function
