@@ -126,7 +126,7 @@
 
 # syntax :-
 # with open("filename.txt","mode") as f:
-#     # Do something with f 
+    # Do something with f 
 
 # This is equivalent to :
 
@@ -141,8 +141,38 @@
 # You can use multiple context managers in one line:
 
 # python
-# with open("input.txt", "r") as infile, open("output.txt", "w") as outfile:
+# with open("16_text.txt", "r") as infile, open("output.txt", "w") as outfile:
 #     for line in infile:
+#         print(line)
 #         outfile.write(line.upper())
 
 
+
+# ------
+
+# Working with Binary Files
+# Use "rb" and "wb" modes for non-text files like images or audio:
+
+
+with open("image.png", "rb") as f:  # rb means read binary mode
+    data = f.read()
+    print(data)
+    print(type(data)) # output: <class 'bytes'>
+    print(len(data)) # output: 127721 (number of bytes in the file)
+    print(data[:10]) # output: b'\x89PNG\r\n\x1a\n\x00\x00' (first 10 bytes of the file )
+
+
+
+with open("copy.png", "wb") as f: 
+    f.write(data)                  
+
+# output :- 
+# it will create copy of image.png file 
+
+# "wb" Mode — Write Binary
+# 🔍 What It Means
+# "w" = write mode: opens the file for writing. If the file exists, it overwrites it. If not, it creates a new one.
+
+# "b" = binary mode: treats the file as raw binary data, not text.
+
+# So "wb" means: open the file for writing in binary format.
