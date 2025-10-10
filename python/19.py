@@ -171,4 +171,4 @@ stack.put("element",timeout=2)  # now 2 seconds after struck we get error
 # except Full:
 #     print("Stack is full! Cannot add more items.")
 
-
+                                                                                             
