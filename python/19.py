@@ -131,9 +131,9 @@ stack.put(2)
 stack.put(3)
 stack.put("hlo")
 
-print(stack.full())  # output: True
+# print(stack.full())  # output: True
 # stack.put("element")  # terminal get struck /frozen because
-stack.put("element",timeout=2)  # now 2 seconds after struck we get error 
+# stack.put("element",timeout=2)  # now 2 seconds after struck we get error 
 
 # ```
 # Traceback (most recent call last):
@@ -172,3 +172,10 @@ stack.put("element",timeout=2)  # now 2 seconds after struck we get error
 #     print("Stack is full! Cannot add more items.")
 
                                                                                              
+
+# removing element from stack  using this queue
+
+print(stack)
+print(stack.get())  # hlo
+print(stack.full()) # false
+
