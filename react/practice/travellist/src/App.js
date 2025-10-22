@@ -143,7 +143,7 @@ React relies on reference comparison to detect changes. If you mutate the origin
   return (
     <div className="app">
       <Logo/>
-      <Form initialItems = {items} addItem = {addItem}/>
+      <Form addItem = {addItem}/>
       <PackingList initialItems = {items} updatePackedStatus = {updatePackedStatus} handleDeleteItems = {handleDeleteItems} handleClearList = {handleClearList}/>
       <Stats initialItems = {items}/>
     </div>
