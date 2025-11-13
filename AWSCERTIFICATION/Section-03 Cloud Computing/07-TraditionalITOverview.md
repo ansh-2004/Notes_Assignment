@@ -8,3 +8,35 @@
 - Well a server is going to contain a **CPU** for **Computation**. CPU is a little piece that will be doing some computations, it will be very helpful to do some calculations and find results. 
 - Your server also needs **RAM, or memory**. This is going to be very , very fast memory, which will allow us to store information and retrieve it very quickly.
 
+- So cpu + memory = brain
+- Now we also need to have some more long-term **storage of data**. In computers we have some special storage to store data, for example, files, 
+- And then if we want to store **data in more sturctured way , we're going to use a database**
+- Finally in server, we're also going to have some **networking aspect. like Routers, switch, DNS server**
+
+- Cloud will give all these things on demand
+
+## IT Terminology
+- Network: cables, routers and servers connected with each other
+- Router: A networking device that forwards data packets between computer networks. They know where to send your packets on the internet. 
+- Switch: Takes a packet and send it to the correct server/client on you network
+
+client computer ---> router -----> switch -----> computer1
+                                          -----> computer2
+                                          -----> computer3
+
+
+
+## Traditionally, how to build infrastructure
+- Traditionally they set up infrastructure in thier own home or garage. they buy the server and set up in their garage. 
+- Now as your website grows, they need more and more servers 
+- When you company grows bigger , you move to office where you have a special room which is to called a data center. In data center, you will be adding more and more servers. 
+
+## Problems with traditional IT approach
+- Pay for the rent for the data center
+- Pay for power supply , cooling and maintenance
+- Adding and replacing hardware takes time
+- Scaling is limited
+- Hire 24/7 team to monitor the infrastruce
+- How to deal with disaster? (Earthquake, power shutdown , fire...)
+
+- Can we externalize all this? Yes using cloud
