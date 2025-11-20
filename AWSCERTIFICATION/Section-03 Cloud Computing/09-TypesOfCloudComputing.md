@@ -1,6 +1,6 @@
 ## Types of Cloud Computing
 - Infrastructure as a Service(Iaas) :- This is to provide the building blocks for cloud IT. With this, we are going to provide networking , computers , data storage space in its raw form
-- Platform as a Service(PaaS):- Removes the need for your organization to manage the underlying infrastruce. so that you can just focus on the deployment and management of your applications.
+- Platform as a Service(PaaS):- Removes the need for your organization to manage the underlying infrastructure. so that you can just focus on the deployment and management of your applications.
 - Software as a Service(SaaS) : Completed product that is run and managed by the service provider
 
 # Example
