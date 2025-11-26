@@ -29,18 +29,12 @@
 
 
 
-Application load balancer                    |           Network Load Balancer      |       Gateway load balancer                 
-                                             |
-- HTTP/HTTPS/gRPC protocols (layer 7)        | - TCP/UDP protocols (layer 4)       |  - Geneve Protocol on the IP packets themselves. (layer 3)
-- HTTP routing features                      | - High performance ; millions of     | - Route traffic to firewalls that you manage on EC2 instances
-- Static DNS(url)                            |request per second                    | - so you can do classic firewall, or intrusion detection or deep packet inspection
-- the users access your load balancers on one| - It gives static IP,not static URL  | - 
-of the protocols and then the load balancer  |- through the use of elastic ip       |
-routes traffic to the downstream EC2         |- Architecture same as ALB            |
-instances. For eg, if you've chosen the      |
-targets to be EC2                            |
+| Application load balancer                 | Network Load Balancer                           | Gateway Load Balancer                    |
+|------------------------------------------ |:-----------------------------------------------:|:----------------------------------------:|
+| Http/HTTPS/gRPC protocols (layer7)        | TCP/UDP protocols (layer 4)                     | Geneve Protocol on the IP packets themselves. (layer 3)  | 
+| Http routing features                     | High performance; millions of request per second| Route traffic to firewalls that you manage on EC2 instances       | 
+| Static DNS (url)                          | It gives static IP, not static URL through the use of elastic ip | so you can do classic firewall or instrusion detection or deep packet inspection           | 
+|The users access your load balancers on one of the protocols and then the load balancer routes traffic to the downstream EC2 instance. For eg, if you've chosen the targets to be EC2    | Architecture same as ALB  | Architecture is little bit complicated so GLB doesnot balance the load to your application. It actually balances the load of the traffic to the virtual appliances that you run on EC2 instances so that you can analyze the traffic or perform firewall operations. That's way is called third-party security virtual appliances. And therefore , the traffic , when it goes to gateway load balancer, first sends the traffic to these ec2 instances that will analyze the traffic. The traffic will be sent back afterwards  to the gateway load balancer and then forwarded back to the applications. So the gateway load balancer here is in the middle to allow us to inspect the IP packets themself and to perform firewall features or intrusion detectioni or deep packet inspection | 
 
 
 
-
-architecture is little bit complicated so GLB doesnot balance the load to your application. It actually balances the load of the traffic to the virtual appliances that you run on EC2 instances so that you can analyze the traffic or perform firewall operations. That's way is called third-party security virtual appliances. And therefore , the traffic , when it goes to gateway load balancer, first sends the traffic to these ec2 instances that will analyze the traffic. The traffic will be sent back afterwards  to the gateway load balancer and then forwarded back to the applications. So the gateway load balancer here is in the middle to allow us to inspect the IP packets themself and to perform firewall features or intrusion detectioni or deep packet inspection
