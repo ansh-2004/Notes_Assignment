@@ -280,7 +280,7 @@ Compatible with the IPv4 and Dualstack IP address types.
 
 ---
 
-## Common gotchas and tips
+## Important Points
 
 - **Don’t forget health checks:**  
   Misconfigured paths or status codes cause healthy instances to be marked unhealthy, blackholing traffic.  
