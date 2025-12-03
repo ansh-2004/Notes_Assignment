@@ -73,3 +73,6 @@ s3://anshgupta-demo-s3-v1  . It is equivalent to
 ```
 - Under the properties you see, the storage classes, tags , metadata and many more but for now keep it default, 
 - Upload it
+
+
+- checking trasnfer
