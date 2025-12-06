@@ -73,4 +73,14 @@ s3://anshgupta-demo-s3-v1  . It is equivalent to
 ```
 - Under the properties you see, the storage classes, tags , metadata and many more but for now keep it default, 
 - Upload it
+- Now we want to open this object and see if we can open it, click on **open** button and we are able to see our jpg file
+- Now try to open with the **Object URL** , we see we can't able to open we get access denied error. This tells that i cannot access my object using this public URL but the URL we open before (using Open buton) is working file . So the difference between these two URL is , the beginning of two URLs is exactly the same, but the rest is very very complicated and long url in the case of Open button because it's called an **S3 pre-signed URL**. Because this URL contains actually a signature that verifies that I am the one making the request, and therefore it has my credentials in it. The public url does not work, but this pre-signed URL with my own credentials works.
+- Now go to your bucket, **anshgupta-demo-s3-v1**, create a folder,
+    - Enter name of folder images and create it 
+- Now i have images folder in my bucket, and within it , i can upload again a file, so upload beach.jpg file . Now you see the destination is now 
 
+```
+s3://anshgupta-demo-s3-v1/images/       . It is equivalent to 
+    - https://us-east-1.console.aws.amazon.com/s3/buckets/anshgupta-demo-s3-v1?region=us-east-1&prefix=images%2F&tab=objects
+```
+- Upload this
