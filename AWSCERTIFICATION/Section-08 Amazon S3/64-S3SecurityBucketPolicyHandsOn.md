@@ -1,0 +1,2 @@
+- To make a bucket policy , so to access the coffee file from the public URL ,
+- For this go under the permissions tab 
