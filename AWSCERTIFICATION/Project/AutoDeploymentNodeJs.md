@@ -107,3 +107,50 @@
         - commit changes 
 
 - Now you can check in your instance machine that your .env file is now available there
+
+# Some important topics
+
+## CI VS CD
+- CI(Continuous Integration) focuses on automatically building and testing code changes frequently to catch bugs early, while CD (Continous Delivery/Deployment) extends CI bt automating the release process, ensuring code is always ready to Deploy (Delivery) or automatically deploying it to production(Deployment) after passing tests, making the whole lifecycle faster and more reliable. 
+- CI is about code quality and integraion , CD is about releasing that quality code efficiently to users.
+
+## Continuous Integraion (CI)
+- Goal: Merge code changes into a shared repository often(daily) and run automated builds and tests to find issues quickly.
+- Proces : Developers push code -> Automated build -> Automated tests (unit,integration)
+- Benefit : Faster feedback for developers, fewer integration problems, higher code quality
+
+## Continuous Delivery (CD)
+- Goal : Ensure code is always in a deployable state , extending CI
+- Process: CI pipeline runs successfully -> Code is automatically packaged and deployed to a staging /testing environment
+- Benefit : Code is always production-ready; deployment to production is a manual , but simple step
+
+## Continuous Deployment (CD)
+- Goal : Fully automate the release process, going one step further than Delivery
+- Process: Everything in Delivery , but after tests pass, the code is automatically deployed to production
+- Benefit: Extremely fast release cycles,  direct and immediate value to users
+
+## Key differences
+- Scope : CI is about building & Testing ; CD is about releasing & deploying
+- Automation : CI automates integration ; CD automates the path to production
+- Manual Steps: Continuous Delivery might have a manual "go/no-go" for production; Continuous Deployment removes it.
+
+## CI/CD Pipeline 
+- It's the complete automated workflow from code commit to deployment , integrating both CI and CD practices. 
+
+## NGINX
+- It is a high-performance , open-source software that acts as a powerfull web server , reverse proxy, load balancer , cache and mail proxy, handling massive amounts of concurrent traffic efficently due to its event-driven , asynchronous architecture. It sits in front of backend servers, directing request, improving speed through caching, distributing loads, and offering security, making it essentail for modern high-traffic websites like netflix and Dropbox
+
+    - **Web Servers** - Servers static content (HTML,CSS , images) directly to users.
+    - **Reverse Proxy** - Sits in front of other servers(like Apache, Node.js) , forwarding client request to the appropriate backend server , hiding server details, and adding security layers.
+    - **Load Balancer** - Distributes incoming traffic across multiple servers to pervent overload and ensure high availability.
+    - **Caching** - Stores copies fo content (like files or API responses) to server them faster reducing load on origin servers.
+    - **Mail Proxy** : Handles email protocols(IMAP,POP3,SMTP)
+- NGINX is designed fro handling thousands of simultaneous connections efficiently.
+- Combines multiple functionalities (proxy,load balancing,caching ) in one tool
+
+
+## Proxy vs Reversy Proxy
+- A proxy acts on behalf of the client to access the internet, while a reverse proxy acts on behalf of the server to recieve requests from clients
+- Forward proxies are used by clients for tasks like privacy or bypassing restrictions, configured on the client-side. Reverse proxies are used by servers for performance, security, and load balancing, with the client typically unaware of their presence.                                                             
+
+
