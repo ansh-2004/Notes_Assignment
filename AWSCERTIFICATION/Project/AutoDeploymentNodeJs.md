@@ -154,3 +154,6 @@
 - Forward proxies are used by clients for tasks like privacy or bypassing restrictions, configured on the client-side. Reverse proxies are used by servers for performance, security, and load balancing, with the client typically unaware of their presence.                                                             
 
 
+
+
+dafjalk
