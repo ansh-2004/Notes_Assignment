@@ -22,11 +22,11 @@
     - select linux
     - Now we need to run all the commands (under downloads section ) in our terminal where we connect our ec2 instance
     - **mkdir actions-runner && cd actions-runner**
-    - Next **curl -o actions-runner-linux-x64-2.308.0.tar.gz -L https://github.com/actions/runner/release/donwload/v2.308.0/actions-runner-linux-x64-2.308.0.tar.gz** (to donwload the latest runner package)
-    - Next, run that echo command ( to validate the hash)
-    - Next , **tar xzf ./actions-runner-linux-x64-2.308.0.tar.gz** (to extract the installer )
+    - Next **curl -o actions-runner-linux-x64-2.329.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.329.0/actions-runner-linux-x64-2.329.0.tar.gz** (to donwload the latest runner package)
+    - Next, run that echo command ( to validate the hash) **echo "194f1e1e4bd02f80b7e9633fc546084d8d4e19f3928a324d512ea53430102e1d  actions-runner-linux-x64-2.329.0.tar.gz" | shasum -a 256 -c**
+    - Next , **tar xzf ./actions-runner-linux-x64-2.329.0.tar.gz** (to extract the installer )
     - Now also run commands under configuration
-    - ./config.sh --url your_github_Repo_url --token your_token
+    - **./config.sh --url https://github.com/ansh-2004/AWS_EC2_deploy_CICD --token your_token**
     - Just enter and we see our self-hosted runner registration has successful 
     - It will create a folder in which our project is there whose name is _work bydefault which we can change
 
@@ -38,7 +38,7 @@
     - run ls command and we see  _work folder 
     - go to this folder and run ls command. We see we have our project folder in this
     - Go to this folder now and run ls command , we see all our project files. 
-    - run ls -la command to check hidden files (.gitignore, node_modules)
+    - run ls -la command to check hidden files (.gitignore)
 
 - Now we got our project , next we need to install node js 
     - so run **sudo apt update**  to update all the packages first 
@@ -154,6 +154,5 @@
 - Forward proxies are used by clients for tasks like privacy or bypassing restrictions, configured on the client-side. Reverse proxies are used by servers for performance, security, and load balancing, with the client typically unaware of their presence.                                                             
 
 
+---
 
-
-dafjalk
