@@ -12,7 +12,7 @@
     - It uses the network to communicate between the instance and the EBS Volume, which means there might be a bit of latency from one computer to reach to another server. 
     - As EBS Volume are network drive , they can be detached from an EC2 Instance and attahed to another one quickly
 - It's locked to a specific Availability Zone. 
-    - That means , if it's created in us-east-1a cannot be attached to us-east-1. But we will see that if we do a snapshot then we are able to move a volume across from different availability zones.
+    - That means , if it's created in us-east-1a cannot be attached to us-east-1b. But we will see that if we do a snapshot then we are able to move a volume across from different availability zones.
 - As EBS is a volume , so you have to provision capacity in advance, so you need to say how many  gigabytes you want in advance, and the IOPS , which is IO opeartions per second and you're basically defining how you want your EBS volume to perform. 
     - You are going to get billed for that provision capacity
     - You can increase the capacity over time it you want to have better performance or more size. 
